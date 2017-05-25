@@ -43,6 +43,16 @@ public class Flashcard {
 		return w; 
 	}
 	
+	static boolean DefinitionIsContained(String userGuessDefinition2, String actualDef) 
+	{
+		
+		if(actualDef.toLowerCase().equals(userGuessDefinition2.toLowerCase()))
+		{
+			return true; 
+		}
+		return false;
+	}
+	
 	public void draw(GraphicsContext gc)
 	{
 		int x = 100; 
